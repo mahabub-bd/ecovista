@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAllLocation } from "./loaction-util";
+import { getAllLocation } from "./location-util";
 
 export async function GET() {
   const locations = await getAllLocation();

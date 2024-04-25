@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getLocationByName } from "../loaction-util";
+import { getLocationByName } from "../location-util";
 
 export async function GET(request, { params: { name } }) {
   const locations = await getLocationByName(name);
