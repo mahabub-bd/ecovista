@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -20,6 +22,7 @@ const LocationDetector = () => {
       });
     }
   }, [searchParams, pathName]);
+
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-slate-700 text-white">
       {loading && (
